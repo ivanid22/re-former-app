@@ -1,0 +1,6 @@
+<%= form_for :user, url: user_path(@user[:id]), method: "patch" do |f| %>
+   Username: <%= f.text_field :username %>
+   Email: <%= f.email_field :email %>
+   Password: <%= f.password_field :password %>
+   <%= submit_tag "Submit" %>
+<% end %>
